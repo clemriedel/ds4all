@@ -9,3 +9,7 @@ pip install lda <br>
 cd ds4all/app <br>
 python app.py <br>
 Open chrome and go to http://127.0.0.1:5000/
+
+The web app is still in construction, thanks for you feedback.
+
+Clem
