@@ -1,7 +1,6 @@
 # Import modules
 import os
 import flask.views
-import pdfkit
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, send_file
 from werkzeug import secure_filename
 #from flask_weasyprint import HTML, render_pdf
