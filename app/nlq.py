@@ -19,7 +19,7 @@ import os
 
 
 
-def clem_lda(a):
+def clemlda(a):
 
 	prev_num = 0
 	for f in os.listdir('static'):
