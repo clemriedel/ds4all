@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<title>ds4all</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <style>
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+</style>
+
+
+
+
+<nav class="navbar navbar-default">
+
+
+    <ul class="nav navbar-nav">
+
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><font size="4" color="grey">ds4all</font><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">NLQ</a></li>
+          <li><a href="/dspipeline">DS pipeline</a></li>
+        </ul>
+
+      
+      <li><a href="/nlq">NLQ:</a></li>
+      <li><a href="/tutorial">Tutorial</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/education">Education</a></li>
+      <li><a href="/thanks">Thanks</a></li>
+      
+      <!-- <li><a href="#">Job & Price</a></li> -->
+      </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+
+    </ul>
+  </div>
+</nav>
+
+<div class="overflow">
+<img src='SFBanner.jpg' alt="logo" height = 150px> <br>
+</div>
+
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  </head>
+
+
+
+
+
+<div style="padding-left:15px;">
+<br>
+Welcome to 'Data Science for all' ! Our mission is to empower people by providing a simple and free access to data science. Natural Language Quantification (NLQ) is the first product of ds4all.io, it can find patterns (or topics) describing an activity and quantify how much is being created by the pattern (for instance in the National Science Fundation grants, the topic "Protein" has generated 100 M$...). You can also check a different prodcut: a full end to end data science pipeline (click on the ds4all dropdown menu on the upper left, or <a href="/dspipeline">here</a>).
+</div>
+
+<div style="padding-right:150px;">
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2 class="text-muted">Natural Language Quantification</h2>
+      </div>
+      <hr/>
+      <div>
+
+You can simply upload your data, run the algorithm and get your report. Check the <a href="/tutorial">'Tutorial'</a> if you would like more information about how to perform this process. Inspiration and examples of databases (use them and get your first results in seconds) can be found in the <a href="/projects">'Projects'</a>. Click on <a href="/education">'Education'</a> to learn more about data science & get guidance to build your own algorithm from scratch. This short (3 min) video summarizes everything:
+</br></br>
+
+<iframe src="https://www.youtube.com/embed/u7jFXDgPso4" width="460" height="259" frameborder="0" allowfullscreen></iframe>
+
+
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Upload your data</h3>
+      </div>
+      <hr/>
+      <div>
+      
+      <form action="upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br /><br />
+        <input type="submit" value="Upload">
+      </form>
+      </div>
+    </div>
+  </body>
+
+
+<br> <br>
+
+    <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Run NLQ and get results!</h3>
+      </div>
+      <hr/>
+  </body>
+Type your file name and click on 'Submit':
+<br><br>
+  <body>
+    <form action="/predict" method="post">
+      <input type="text" name="file_name" />
+      <input type="submit" />
+    </form>
+    
+  </body>
+
+
+<br><br>
+
+
+
+
+</div>
+
+</html>
+ 

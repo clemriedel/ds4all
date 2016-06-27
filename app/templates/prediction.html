@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<title>ds4all</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <style>
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+</style>
+
+
+
+
+<nav class="navbar navbar-default">
+
+
+    <ul class="nav navbar-nav">
+
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><font size="4" color="grey">ds4all</font><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/nlq">NLQ</a></li>
+          <li><a href="/dspipeline">DS pipeline</a></li>
+        </ul>
+
+      
+      <li><a href="/nlq">NLQ:</a></li>
+      <li><a href="/tutorial">Tutorial</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/education">Education</a></li>
+      <li><a href="/thanks">Thanks</a></li>
+      
+      <!-- <li><a href="#">Job & Price</a></li> -->
+      </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+
+    </ul>
+  </div>
+</nav>
+
+<div class="overflow">
+<img src= '../SFBanner.jpg'  alt="logo" height = 150px> <br>
+</div>
+
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  </head>
+
+
+<div style="padding-right:150px;">
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2 class="text-muted">NLQ Report: {{title}}  </h2> 
+
+      </div>
+      <hr/>
+      <div>
+
+
+
+	<body>
+		{% for topic in topics %}
+		<p>{{ topic }}</p>
+		{% endfor %}
+		<br>
+
+    {{num}}
+		<img src = {{ url_for('static', filename = f_name)}} height=400>
+	</body>
+
+
+</html>
