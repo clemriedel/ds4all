@@ -5,7 +5,7 @@ from flask import Flask, render_template, request, redirect, url_for, send_from_
 from werkzeug import secure_filename
 #from flask_weasyprint import HTML, render_pdf
 #from weasyprint import HTML
-from nlq import clemlda
+from nlq import clem_lda
 
 # Initialize the Flask application
 app = Flask(__name__, static_url_path = "", static_folder='static')
