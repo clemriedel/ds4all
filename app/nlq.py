@@ -3,8 +3,6 @@ import pandas as pd
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-import matplotlib
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import csv
 import numpy as np

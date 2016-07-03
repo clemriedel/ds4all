@@ -20,6 +20,9 @@
 .overflow{
     overflow: hidden;
 }
+
+
+
 </style>
 
 
@@ -44,6 +47,9 @@
       <li><a href="/projects">Projects</a></li>
       <li><a href="/education">Education</a></li>
       <li><a href="/thanks">Thanks</a></li>
+      <li><a href="/clem">Contact & Bio</a></li>
+
+      
       
       <!-- <li><a href="#">Job & Price</a></li> -->
       </ul>
@@ -116,13 +122,15 @@ You can simply upload your data, run the algorithm and get your report. Check th
       </div>
       <hr/>
   </body>
-Type your file name and click on 'Submit':
+Type your file name (with .csv) and click on 'Submit':
 <br><br>
   <body>
     <form action="/predict" method="post">
       <input type="text" name="file_name" />
       <input type="submit" />
     </form>
+    <br>
+    (Please limit the number of your documents to 3000 for the online version.)
     
   </body>
 
