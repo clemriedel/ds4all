@@ -1,0 +1,13 @@
+{% extends 'layouts/main.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+
+<div class="page-header">
+  <h1>About</h1>
+</div>
+<p>
+The dashboard that youu are using is the output of an entire end to end pipeline to predict fraud probabilites. We chose to build a random forest model (metric: recall) to predict whether an event posting was fraudulent. The model predictions do not imply a ground truth about a transaciton being fraud or not, but rather flags which transactions need further manual review by presenting fraud probability in the dashbord.</br></br></p>
+<p>
+This work has been realized by Joe Warren, Real Limoges, Clement Riedel and Joel Carlson. You can find the codes on our github accounts: jhwarren, real-limoges, clemriedel, joelcarlson.
+</p>
+{% endblock %}

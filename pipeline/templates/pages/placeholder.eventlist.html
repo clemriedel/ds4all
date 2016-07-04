@@ -1,0 +1,89 @@
+
+{% extends 'layouts/main.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+<br><br>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  <script type=text/javascript>
+   
+
+    $(function() {
+      $('#refresh_queue').bind('click', function() {
+        $.getJSON('/_get_queue', {
+
+        }, function(data) {
+
+          $("#queue").html(data.result);
+        });
+        return false;
+      });
+    });
+
+
+    
+    $(function() {
+      $( document ).on( "click", "button.test_record", function() {
+        console.log('clicked!');
+        $.getJSON('_get_detail', {
+          id: $(this).data("id")
+        }, function(data) {
+          $("#detail").html(data.result);
+        });
+      });
+      return false;
+    });
+    
+  </script>
+  </head>
+  <body>
+    <div class="container">
+
+    <div class="row">
+
+      <div class="col-xs-6" id="">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Event List:</h3>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default pull-right" id="refresh_queue">
+                    Refresh
+                  </button>
+                  <div class="clearfix"></div>
+                </div>
+
+            </div>
+            <div class="panel-body" id="queue" style="max-height: 10; overflow-y: scroll;">
+            
+
+            </div>
+          </div>    
+
+
+
+
+          <p></p>
+
+      </div>
+
+      <div class="col-xs-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Event Detail:</h3>
+            </div>
+            <div class="panel-body" id="detail">
+
+            </div>
+          </div>     
+      </div>
+
+    </div>
+  </body>
+</html>
+
+{% endblock %}

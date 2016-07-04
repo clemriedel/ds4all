@@ -4,11 +4,11 @@ Welcome to the ds4all github repo. The easiest way to navigate it is on the asso
 
 The repo is structured as follows: <br>
   ├── app <br>
-  ├── nlq <br>
+  ├── supervised_learning <br>
   ├── pipeline <br>
   ├── README.md
 
-**[app] Contains the source of the web app, therefore you can:** <br>
+**[app] Contains the source of the web app for Natural Language Quantification, therefore you can:** <br>
 git clone https://github.com/clemriedel/ds4all <br>
 cd ds4all/app <br>
 python app.py <br>
